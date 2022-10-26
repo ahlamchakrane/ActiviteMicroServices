@@ -14,7 +14,10 @@ public class AhlamchakraneActivitePratique4Application {
         SpringApplication.run(AhlamchakraneActivitePratique4Application.class, args);
     }
     @Bean
-    DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(ReactiveDiscoveryClient reactiveDiscoveryClient, DiscoveryLocatorProperties discoveryLocatorProperties) {
-        return new DiscoveryClientRouteDefinitionLocator(reactiveDiscoveryClient, discoveryLocatorProperties);
+    DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(
+            ReactiveDiscoveryClient reactiveDiscoveryClient,
+            DiscoveryLocatorProperties discoveryLocatorProperties) {
+        return new DiscoveryClientRouteDefinitionLocator(reactiveDiscoveryClient,
+                discoveryLocatorProperties);
     }
 }
